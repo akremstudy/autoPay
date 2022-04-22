@@ -52,16 +52,16 @@ require("dotenv").config();
     //    },
     // polygon_testnet: {
     //     url: `${process.env.NODE_URL_MUMBAI}`,
-    //     accounts: [process.env.TESTNET_PK],
-    //     gas: 10000000 ,
-    //     gasPrice: 50000000000
-    //   }
+    //     seeds: [process.env.TESTNET_PK],
+    //     gas: 2000000 ,
+    //     gasPrice: 10000000000
+    //   },
     // polygon: {
     //   url: `${process.env.NODE_URL_MATIC}`,
     //   seeds: [process.env.PRIVATE_KEY],
-    //   gas: 2000000 ,
-    //   gasPrice: 250000000000
-    // }
+    //   gas: 7000000 ,
+    //   gasPrice: 150000000000
+    // },
     // harmony_testnet: {
     //   url: `${process.env.NODE_URL_HARMONY_TESTNET}`,
     //   seeds: [process.env.TESTNET_PK],
@@ -70,15 +70,28 @@ require("dotenv").config();
     // }
     // harmony_mainnet: {
     //   url: `${process.env.NODE_URL_HARMONY_MAINNET}`,
-    //   seeds: [process.env.MAINNET_PK],
+    //   seeds: [process.env.PRIVATE_KEY],
     //   gas: 2000000 ,
-    //   gasPrice: 250000000000
+    //   gasPrice: 50000000000
+    // },
+    //  arbitrum_testnet: {
+    //   url: `${process.env.NODE_URL_ARBITRUM_TESTNET}`,
+    //   seeds: [process.env.PRIVATE_KEY],
+    //   gas: 10000000 ,
+    //   gasPrice: 50000000000
+    // },
+    // arbitrum: {
+    //   url: `${process.env.NODE_URL_ARBITRUM_MAINNET}`,
+    //   seeds: [process.env.PRIVATE_KEY],
+    //   gas: 10000000 ,
+    //   gasPrice: 50000000000
     // }
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: process.env.ETHERSCAN
+    //apiKey: process.env.ETHERSCAN
+    apiKey: process.env.POLYSCAN 
   },
 
   contractSizer: {
